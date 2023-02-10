@@ -20,6 +20,7 @@ const Table = ({ countries }) => {
         canPreviousPage,
         pageOptions,
         state,
+        setPageSize,
         prepareRow
     } = useTable({
         columns,
@@ -28,7 +29,7 @@ const Table = ({ countries }) => {
     usePagination
     )
 
-    const { pageIndex } = state;
+    const { pageIndex, pageSize } = state;
 
     return (
         <>
@@ -64,6 +65,9 @@ const Table = ({ countries }) => {
                 canNextPage={canNextPage}
                 pageIndex={pageIndex}
                 pageOptions={pageOptions}
+                pageSize={pageSize}
+                setPageSize={setPageSize}
+
             />
         </>
     );

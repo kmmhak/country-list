@@ -18,5 +18,8 @@ span  {
 
 .pagination {
   padding: 10px;
-  justify-items: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
 }
