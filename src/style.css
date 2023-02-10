@@ -15,3 +15,8 @@ span  {
   color: blue;
   font-weight: bold;
 }
+
+.pagination {
+  padding: 10px;
+  justify-items: right;
+}
